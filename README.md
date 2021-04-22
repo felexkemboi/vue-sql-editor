@@ -1,4 +1,4 @@
-# church
+# Vue Sql Editor
 
 ## Project setup
 ```
