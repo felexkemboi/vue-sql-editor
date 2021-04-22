@@ -6,7 +6,6 @@ import store from "@/store";
 import router from "@/router";
 import VueTailwind from 'vue-tailwind';
 //import TDatepicker from 'vue-tailwind/dist/t-datepicker';
-
 Vue.use(VueTailwind)
 Vue.use(Vuex);
 Vue.config.productionTip = false
