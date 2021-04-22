@@ -1,12 +1,6 @@
 <template>
   <div class="">
-    <t-datepicker
-    v-model="date"
-    :date-formatter="dateFormatter"
-    :date-parser="dateParser"
-    date-format="YYYY-MM-DD"
-    user-format="LL"
-  />
+    <t-datepicker v-model="date" :date-formatter="dateFormatter" :date-parser="dateParser" date-format="YYYY-MM-DD" user-format="LL"/>
   </div>
 </template>
 
