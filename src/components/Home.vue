@@ -3,7 +3,8 @@
   <div class="h-screen flex overflow-hidden bg-gray-100">
     <div class="hidden md:flex md:flex-shrink-0">
       <div class="flex flex-col w-64">
-        <div class="flex flex-col h-0 flex-1 bg-gray-800">
+        <div class="fl  import products from './json/products.json'
+ex flex-col h-0 flex-1 bg-gray-800">
           <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
             <div class="flex items-center flex-shrink-0 px-4">
               <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
@@ -98,7 +99,7 @@
 
 <script>
 
-//import json from './data/categories.json'
+//import categories from './data/categories.json'
 //import products from './json/products.json'
 
 import axios from 'axios';
@@ -107,9 +108,9 @@ export default {
   name: 'UserHome',
   created(){
     console.log("Home home home...")
-    axios.get("/data/categories.json").then(res => (
-      console.log(res),
-      this.weatherDataList = res.data
+    axios.get("/src/components/data/categories.json").then(res => (
+      console.log(res) //,
+      //this.weatherDataList = res.data
     ));
   },
   computed: {
